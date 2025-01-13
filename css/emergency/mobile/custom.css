@@ -1,0 +1,39 @@
+/* **************************************** *
+ *  paging
+ * **************************************** */
+
+.pagination{display:flex; align-items:center; justify-content:center; margin-top:30px}
+.pagination.align-l{justify-content:flex-start}
+.pagination .ctrl{display:flex; align-items:center; justify-content:center; position:relative; width:42px; height:42px; margin-left:-1px; background-color:#fff; border:1px solid #dadada; box-sizing:border-box}
+.pagination  i{padding-top:1px; color:#808080; font-size:18px}
+.pagination :hover{border:1px solid #4761a1; z-index:1}
+.pagination :first-child{border-radius:4px 0 0 4px}
+.pagination :last-child{border-radius:0 4px 4px 0px}
+.page-item{display:flex; align-items:center; justify-content:center; position:relative; min-width:42px; height:42px; margin-left:-1px; padding:0 5px; background-color:#fff; border:1px solid #dadada; box-sizing:border-box}
+.page-item :hover{border:0px solid #4761a1; z-index:1}
+.page-item a{padding-top:2px; line-height:130%; color:#808080; font-size:15px; font-weight:normal; letter-spacing:-0.2px}
+.page-item.active a{padding-top:2px; line-height:130%; color:white; font-size:15px; font-weight:normal; letter-spacing:-0.2px}
+.page-item.active{color:#fff; background-color:#4761a1; font-weight:300; border:1px solid #4761a1; z-index:1}
+.page-item.active:after{content:""; position:absolute; left:10px; right:10px; bottom:5px; height:2px; background:#fff}
+.page-item{transition:all .20s ease}
+h3.static01{font-size:18px; font-weight:300}
+
+.status-num{
+	min-width: 48px;
+}    
+ 
+#portal-header .header-top .emp-logo-eq {position:relative; height:34px; margin-bottom:25px; z-index:9}
+#portal-header .header-top .emp-logo-eq a{display:block; width:179px; height:34px; background:url("https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/logo_eq.png") no-repeat 50% 50%; background-size:179px 34px}
+
+#portal-header .header-top .emp-logo-df {position:relative; height:34px; margin-bottom:25px; z-index:9}
+#portal-header .header-top .emp-logo-df a{display:block; width:179px; height:34px; background:url("https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/logo_df.png") no-repeat 50% 50%; background-size:179px 34px}
+
+#portal-header .header-top .emp-logo-er {position:relative; height:34px; margin-bottom:25px; z-index:9}
+#portal-header .header-top .emp-logo-er a{display:block; width:179px; height:34px; background:url("https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/logo_er.png") no-repeat 50% 50%; background-size:179px 34px}
+ 
+#portal-header .header-top .emp-logo-nr {position:relative; height:34px; margin-bottom:25px; z-index:9}
+#portal-header .header-top .emp-logo-nr a{display:block; width:179px; height:34px; background:url("https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/logo_nr.png") no-repeat 50% 50%; background-size: 100% 112%}
+
+#mainLogo{
+    cursor: pointer;
+}

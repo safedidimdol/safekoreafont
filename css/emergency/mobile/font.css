@@ -1,0 +1,127 @@
+
+/* **************************************** *
+ * Pretendard
+ * **************************************** */
+ @font-face {
+	font-family: 'tjs';
+	font-weight: normal;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/webfontworld/theJamsil/theJamsil-Regular.woff2') format('woff2'),
+	     url('https://cdn.jsdelivr.net/gh/webfontworld/theJamsil/theJamsil-Regular.woff') format('woff');
+	font-display: block;
+}
+@font-face {
+	font-family: 'ptd';
+	font-weight: normal;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Medium.eot');
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Medium.woff2') format('woff2'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Medium.woff') format('woff'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Medium.ttf') format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: 'ptd';
+	font-weight: 300;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-SemiBold.eot');
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-SemiBold.woff2') format('woff2'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-SemiBold.woff') format('woff'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-SemiBold.ttf') format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: 'ptd';
+	font-weight: 600;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Bold.eot');
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Bold.woff2') format('woff2'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Bold.woff') format('woff'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Bold.ttf') format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: 'ptd';
+	font-weight: 900;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Black.eot');
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Black.woff2') format('woff2'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Black.woff') format('woff'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Black.ttf') format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: 'ptd';
+	font-weight: bold;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Bold.eot');
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Bold.woff2') format('woff2'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Bold.woff') format('woff'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekorea/Pretendard-Bold.ttf') format("truetype");
+	font-display: swap;
+}
+
+
+/* **************************************** *
+ * theJamsil
+ * **************************************** */
+ @font-face {
+	font-family: 'tjs';
+	font-weight: normal;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Regular.eot');
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Regular.eot?#iefix') format('embedded-opentype'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Regular.woff2') format('woff2'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Regular.woff') format('woff'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Regular.ttf') format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: 'tjs';
+	font-weight: 300;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Medium.eot');
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Medium.eot?#iefix') format('embedded-opentype'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Medium.woff2') format('woff2'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Medium.woff') format('woff'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Medium.ttf') format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: 'tjs';
+	font-weight: 600;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Bold.eot');
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Bold.woff2') format('woff2'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Bold.woff') format('woff'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Bold.ttf') format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: 'tjs';
+	font-weight: 900;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-ExtraBold.eot');
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-ExtraBold.eot?#iefix') format('embedded-opentype'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-ExtraBold.woff2') format('woff2'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-ExtraBold.woff') format('woff'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-ExtraBold.ttf') format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: 'tjs';
+	font-weight: bold;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Bold.eot');
+	src: url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Bold.woff2') format('woff2'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Bold.woff') format('woff'),
+	     url('https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/theJamsil-Bold.ttf') format("truetype");
+	font-display: swap;
+}
