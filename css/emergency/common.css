@@ -718,7 +718,7 @@ textarea:focus:-ms-input-placeholder{color:transparent}
     letter-spacing:-0.5px;
     font-family:'ptd', 'sans-serif';
     font-weight:300;
-    background:#fff url("/idsiSFK/neo/ext/img/emergency/select.png") right 50% no-repeat;
+    background:#fff url("https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/select.png") right 50% no-repeat;
     background-size:30px 36px; 
     appearance:none;
     cursor:pointer;
@@ -728,8 +728,8 @@ textarea:focus:-ms-input-placeholder{color:transparent}
     text-overflow:ellipsis;
     overflow:hidden;
 }
-.select-cmm select[disabled]{background:#eeeeee url("/idsiSFK/neo/ext/img/emergency/select.png") right 50% no-repeat; background-size:30px 36px; color:#b4b4b4}
-.select-cmm select[readonly]{background:#f5f5f5 url("/idsiSFK/neo/ext/img/emergency/select.png") right 50% no-repeat; background-size:30px 36px}
+.select-cmm select[disabled]{background:#eeeeee url("https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/select.png") right 50% no-repeat; background-size:30px 36px; color:#b4b4b4}
+.select-cmm select[readonly]{background:#f5f5f5 url("https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/select.png") right 50% no-repeat; background-size:30px 36px}
 .select-cmm option{line-height:24px; font-size:15px}
 .select-cmm select::-ms-expand{display:none}
 
@@ -999,7 +999,7 @@ textarea:focus:-ms-input-placeholder{color:transparent}
   content:''; display:flex; align-items:center; justify-content:center;
   position:absolute; left:50px; bottom:60px; width:70px; height:50px;
   background-color:rgba(0,0,0,.04);
-  background-image:url("/idsiSFK/neo/ext/img/emergency/arrow_right_s_line.svg");
+  background-image:url("https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/arrow_right_s_line.svg");
   background-repeat:no-repeat;
   background-position:50%;
   background-size:28px;
@@ -1016,7 +1016,7 @@ textarea:focus:-ms-input-placeholder{color:transparent}
 .emergency-gate.df .gate-box:hover:nth-child(2){background-color:#338495}
 
 .emergency-gate .gate-box:hover:nth-child(1):after,
-.emergency-gate .gate-box:hover:nth-child(2):after{background-color:rgba(0,0,0,.2); background-image:url("/idsiSFK/neo/ext/img/emergency/arrow_right_s_line_white.svg")}
+.emergency-gate .gate-box:hover:nth-child(2):after{background-color:rgba(0,0,0,.2); background-image:url("https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/arrow_right_s_line_white.svg")}
 .emergency-gate .gate-box:hover .gate-tit strong{color:#fff}
 
 
@@ -1084,7 +1084,7 @@ textarea:focus:-ms-input-placeholder{color:transparent}
   content:''; display:flex; align-items:center; justify-content:center;
   width:40px; height:40px; margin-top:12px;
   background-color:#eef1f6;
-  background-image:url("/idsiSFK/neo/ext/img/emergency/arrow_right_s_line.svg");
+  background-image:url("https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/arrow_right_s_line.svg");
   background-repeat:no-repeat;
   background-position:8px 50%;
   background-size:26px;
@@ -1096,7 +1096,7 @@ textarea:focus:-ms-input-placeholder{color:transparent}
 .inside-map .map-box:hover:after
 {
   background-color:#4761a1;
-  background-image:url("/idsiSFK/neo/ext/img/emergency/arrow_right_s_line_white.svg")
+  background-image:url("https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/arrow_right_s_line_white.svg")
 }
 
 
