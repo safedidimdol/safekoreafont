@@ -18,7 +18,7 @@ var bbsOrdr = urlParams.get('bbsOrdr');
 
 function fn_search() {
 		var url = "";
-		url = "/idsiSFK/neo/ext/json/disasterDataList/disasterData_" + bbsOrdr + ".json";
+		url = "/idsiSFK/neo/ext/json/disasterDataList/disasterData_" + bbsOrdr + ".do";
 		
 		$.getJSON(url, function(data) {
 			data = data[0];

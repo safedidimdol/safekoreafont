@@ -11,7 +11,7 @@ $(function(){
 	
 	var dfArr = [];
 	
-	$.getJSON('/idsiSFK/neo/ext/json/emergency/emrList.json',function(data){
+	$.getJSON('/idsiSFK/neo/ext/json/emergency/emrList.do',function(data){
 		
 			var data = _.filter(data, (v) => {			
 				  return  moment().diff(moment(v.CREAT_DT, "YYYY/MM/DD HH:mm:ss"), 'days') <= 7;

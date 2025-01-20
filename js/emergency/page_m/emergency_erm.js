@@ -10,8 +10,8 @@ $(document).on('click','#mainLogo',function(){
 $(function(){
 	    	 
 		//긴급재난문자
-		var url = "/idsiSFK/neo/ext/json/main/main.json";
-		url = "/idsiSFK/neo/ext/json/emergency/emrAllList.json";
+		var url = "/idsiSFK/neo/ext/json/main/main.do";
+		url = "/idsiSFK/neo/ext/json/emergency/emrAllList.do";
 		$.getJSON(url,function(data){
 			
 			_.forEach(data,function(v,i){

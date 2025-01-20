@@ -239,7 +239,7 @@ $(function(){
 		}
 
 		function fn_getBdongSidoCd() {
-			$.getJSON("/idsiSFK/neo/ext/json/arcd/bd/bd_sido.json", function(data) {
+			$.getJSON("/idsiSFK/neo/ext/json/arcd/bd/bd_sido.do", function(data) {
 				for(i = 0; i < data.length; i++) {
 					var sidoNm = data[i].SIDO_NM;
 					//if( sidoNm == "부산광역시" || sidoNm == "울산광역시" || sidoNm == "강원특별자치도" || sidoNm == "경상북도" ){
@@ -281,7 +281,7 @@ $(function(){
 			// 법정동 시군구 하위 콤보 초기화
 			sbLawArea2.removeAll();
 
-			$.getJSON("/idsiSFK/neo/ext/json/arcd/bd/" + sbLawArea1.getValue() + "/bd_sgg.json", function(data) {
+			$.getJSON("/idsiSFK/neo/ext/json/arcd/bd/" + sbLawArea1.getValue() + "/bd_sgg.do", function(data) {
 				for(i = 0; i < data.length; i++) {
 					sbLawArea2.addItem( data[i].SGG_CD , data[i].SGG_NM , i );
 				}
@@ -347,7 +347,7 @@ $(function(){
 			};
 
 			//if(CommonUtil.isNull(dm_searchInfo.get( "searchRstrNm" ))) {
-				$.getJSON("/idsiSFK/neo/ext/json/tsunamiShelterList/tsunamiShelterList_" + dm_searchInfo.get( "govAreaCode" ) + ".json", function(data) {
+				$.getJSON("/idsiSFK/neo/ext/json/tsunamiShelterList/tsunamiShelterList_" + dm_searchInfo.get( "govAreaCode" ) + ".do", function(data) {
 					//debugger;
 					console.log('getJsonData');
 					jdata = [];
