@@ -306,7 +306,7 @@ $(function(){
 				//$(".level1_title").html("지진옥외대피장소");
 		}
 
-		$.getJSON("/idsiSFK/neo/ext/json/secd/secd_" + dm_searchInfo.get( "searchCdKey" ) + ".json", function(data) {
+		$.getJSON("/idsiSFK/neo/ext/json/secd/secd_" + dm_searchInfo.get( "searchCdKey" ) + ".do", function(data) {
 			for(i = 0; i < data.length; i++) {
 				$("#sch20-2").append("<option value='" + data[i].CMMN_CD_VALUE + "'>" + data[i].CMMN_CD_NM + "</option>");
 			}
@@ -349,7 +349,7 @@ $(function(){
 	}
 
 	function fn_getBdongSidoCd() {
-		$.getJSON("/idsiSFK/neo/ext/json/arcd/bd/bd_sido.json", function(data) {
+		$.getJSON("/idsiSFK/neo/ext/json/arcd/bd/bd_sido.do", function(data) {
 			for(i = 0; i < data.length; i++) {
 				sbLawArea1.addItem( data[i].SIDO_CD , data[i].SIDO_NM , i );
 			}
@@ -370,7 +370,7 @@ $(function(){
 		sbLawArea3.removeAll();
 		sbLawArea3.addItem( "" , "읍면동선택" , 0 );
 
-		$.getJSON("/idsiSFK/neo/ext/json/arcd/bd/" + sbLawArea1.getValue() + "/bd_sgg.json", function(data) {
+		$.getJSON("/idsiSFK/neo/ext/json/arcd/bd/" + sbLawArea1.getValue() + "/bd_sgg.do", function(data) {
 			for(i = 0; i < data.length; i++) {
 				sbLawArea2.addItem( data[i].SGG_CD , data[i].SGG_NM , i );
 			}
@@ -388,7 +388,7 @@ $(function(){
 		sbLawArea3.removeAll();
 		sbLawArea3.addItem( "" , "읍면동선택" , 0 );
 
-		$.getJSON("/idsiSFK/neo/ext/json/arcd/bd/" + sbLawArea1.getValue() + "/" + sbLawArea2.getValue() + "/bd_emd.json", function(data) {
+		$.getJSON("/idsiSFK/neo/ext/json/arcd/bd/" + sbLawArea1.getValue() + "/" + sbLawArea2.getValue() + "/bd_emd.do", function(data) {
 				 _.forEach(data, function(obj1) {
 					_.forEach(replaceArr,function(v){
 						if(_.includes($('#sbLawArea1 option:selected').html(),v.pr)){
@@ -468,10 +468,10 @@ $(function(){
 				var url = "";
 	
 				if(dm_searchInfo.get( "acmdfclty_cd" ) == "1")
-					//url = "/idsiSFK/neo/ext/json/indoorList/indoorList_" + dm_searchInfo.get( "govAreaCode" ) + ".json";		
-					url = "/idsiSFK/neo/ext/json/acmdfcltyList/acmdfcltyList_" + dm_searchInfo.get( "govAreaCode" ) + ".json";
+					//url = "/idsiSFK/neo/ext/json/indoorList/indoorList_" + dm_searchInfo.get( "govAreaCode" ) + ".do";		
+					url = "/idsiSFK/neo/ext/json/acmdfcltyList/acmdfcltyList_" + dm_searchInfo.get( "govAreaCode" ) + ".do";
 				else
-					url = "/idsiSFK/neo/ext/json/outhouseList/outhouseList_" + dm_searchInfo.get( "govAreaCode" ) + ".json";
+					url = "/idsiSFK/neo/ext/json/outhouseList/outhouseList_" + dm_searchInfo.get( "govAreaCode" ) + ".do";
 
 			$.getJSON(url, function(data) {
 				jdata = [];

@@ -89,7 +89,7 @@ var mapIcon = true;
 		//조회 함수
 		function fn_search() {
 				var url = "";
-				url = "/idsiSFK/neo/ext/json/disasterDataList/disasterDataList.json";
+				url = "/idsiSFK/neo/ext/json/disasterDataList/disasterDataList.do";
 
 				
 				$.getJSON(url, function(data) {

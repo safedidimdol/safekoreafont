@@ -428,7 +428,7 @@ var $li = $('#gen').find('li').clone();
 		list3.value = "";
 
 		readJSONFile("/arcd/bd/bd_sido");
-		$.getJSON("/idsiSFK/neo/ext/json/arcd/hd/hd_sido.json", function(data) {
+		$.getJSON("/idsiSFK/neo/ext/json/arcd/hd/hd_sido.do", function(data) {
 			hdSD = data;
 		});
 		
@@ -480,7 +480,7 @@ var $li = $('#gen').find('li').clone();
 
 		var orgCd = hdSD[document.getElementById("sbLawArea1").selectedIndex - 1].ORG_CD;
 		
-		$.getJSON("/idsiSFK/neo/ext/json/arcd/hd/" + orgCd + "/hd_sgg.json", function(data) {
+		$.getJSON("/idsiSFK/neo/ext/json/arcd/hd/" + orgCd + "/hd_sgg.do", function(data) {
 			hdSGG = data;
 		});
 
@@ -537,7 +537,7 @@ var $li = $('#gen').find('li').clone();
 		list3.value = "";
 
 
-		$.getJSON("/idsiSFK/neo/ext/json/arcd/bd/" + sido + "/" + sgg + "/bd_emd.json", function(data) {
+		$.getJSON("/idsiSFK/neo/ext/json/arcd/bd/" + sido + "/" + sgg + "/bd_emd.do", function(data) {
 				 _.forEach(data, function(obj1) {
 					_.forEach(replaceArr,function(v){
 						if(_.includes($('#sbLawArea1 option:selected').html(),v.pr)){
@@ -653,7 +653,7 @@ var $li = $('#gen').find('li').clone();
 		} else {
 			readJSONFile("/arcd/hd/" + sido + "/hd_sgg",'','Y');
 
-			$.getJSON("/idsiSFK/neo/ext/json/arcd/hd/" + $('#sbRnArea1').val() + "/hd_sgg.json", function(data) {
+			$.getJSON("/idsiSFK/neo/ext/json/arcd/hd/" + $('#sbRnArea1').val() + "/hd_sgg.do", function(data) {
 				cggArr = [];
 				for(i = 0; i < data.length; i++) {
 					cggArr.push(data[i].ORG_CD);
