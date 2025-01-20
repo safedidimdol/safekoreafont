@@ -80,7 +80,7 @@ $(function(){
 				  	const formattedDate = date.format("YYYY-MM-DD HH:mm:ss");		 
 					 //메세지
 					 $li.find('span').eq(1).html(formattedDate + ' '+ v.MSG_CN.replace(locArr[0],''));
-					 $li.find('a').attr('href','/idsiSFK/neo/emp/er/emergency_er1_d.html?bbsOrdr=' + v.MD101_SN + '')
+					 $li.find('a').attr('href','/idsiSFK/neo/emp/er/emergency_er1_d.do?bbsOrdr=' + v.MD101_SN + '')
 					 //$div.find('span').eq(0).html(loc);
 					 
 					  $('#sms-list').append($li);		
