@@ -127,7 +127,7 @@ var mapIcon = true;
 							//var anc = "신주소 : "+json.acmdFcltySeCd + " " + json.dtlAdres + "<br/>구주소 :" +json.rnDtlAdres + "<span class='gps_imgSet_icon'><i class='ir'>지도보기</i></span>"
 							gen.getChild( i , "a1" ).setValue( json.BBS_ORDR );
 							gen.getChild( i , "a2" ).setValue( json.CONT );						       
-							gen.getChild( i , "a2" ).setHref('/idsiSFK/neo/emp/er/emergency_er1_d.html?bbsOrdr=' + json.BBS_ORDR);
+							gen.getChild( i , "a2" ).setHref('/idsiSFK/neo/emp/er/emergency_er1_d.do?bbsOrdr=' + json.BBS_ORDR);
 							//gen.getChild( i , "MSG_CN" ).setHref( '/idsiSFK/neo/emp/er/emergency_er1_d.html?bbsOrdr=' + json.BBS_ORDR  );
 							gen.getChild( i , "a3" ).setValue( json.FRST_REGIST_DT );
 						}
