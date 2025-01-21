@@ -1,10 +1,10 @@
 //목록보기 버튼
 function fn_retrieve() {
-	if (document.referrer.includes('/emergency_er1.html')) {
+	if (document.referrer.includes('/emergency_er1.do')) {
 		history.back();
 	}
 	else{
-	location.href = "/idsiSFK/neo/emp/er/emergency_er1.html";
+	location.href = "/idsiSFK/neo/emp/er/emergency_er1.do";
 	}
 }
 
@@ -18,6 +18,7 @@ var bbsOrdr = urlParams.get('bbsOrdr');
 
 function fn_search() {
 		var url = "";
+		debugger;
 		url = "/idsiSFK/neo/ext/json/disasterDataList/disasterData_" + bbsOrdr + ".do";
 		
 		$.getJSON(url, function(data) {
