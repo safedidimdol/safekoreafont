@@ -86,7 +86,7 @@ function readJSONFile(fileName, arcd, Rn) {
 	// 'YYYYMMDDHHMMSS' 형태로 날짜 및 시간 문자열 만들기
 	var formattedDateTime = year + month + day + hours + minutes + seconds;
 
-	fileReader.open('GET', encodeURI("/idsiSFK/neo/ext/json/" + fileName + ".json?datetime="+formattedDateTime), true);
+	fileReader.open('GET', encodeURI("/idsiSFK/neo/ext/json/" + fileName + ".do?datetime="+formattedDateTime), true);
 	fileReader.send(null);
 }
 //급수시설
