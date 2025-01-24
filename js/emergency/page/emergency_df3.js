@@ -369,7 +369,7 @@ var $li = $('#gen').find('li').clone();
  		var la = ""; // 위도 36.....
  		lo = Number(json.FACIL_LODE) + Number(json.FACIL_LOMI) / 60 + Number(json.FACIL_LOSE) / 3600;
  		la = Number(json.FACIL_LADE) + Number(json.FACIL_LAMI) / 60 + Number(json.FACIL_LASE) / 3600;
- 		url = "/idsiSFK/neo/mapViewPopup_neo.html?lo="+lo+"&la="+la+"&facilNm="+encodeURI(encodeURIComponent(param.facilNm)) + '' +  "&facilDtl="+encodeURI(encodeURIComponent(param.facilDtl));
+ 		url = "/idsiSFK/neo/mapViewPopup_neo.do?lo="+lo+"&la="+la+"&facilNm="+encodeURI(encodeURIComponent(param.facilNm)) + '' +  "&facilDtl="+encodeURI(encodeURIComponent(param.facilDtl));
 	    window.open( url, "spamMain", "height=660px; width=660px; left=0; top=0; toolbar=no, menubar=no, location=no, status=yes, realzable=no, fullscreen=no, scrollbars=no, resizable=yes");
 
 	}
