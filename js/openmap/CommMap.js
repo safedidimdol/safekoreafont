@@ -105,14 +105,14 @@ function showMap(useMap) {
 		flgCurrentMap = NAVER;
 		startNaverMap();
 		$(".setMapheader a:nth-child(1)").attr("href", "javascript:showMap('K');");
-		$(".setMapheader a:nth-child(1) img").attr("src", "/idsiSFK/neo/ext/img/common/icon_kakao_map.png");
+		$(".setMapheader a:nth-child(1) img").attr("src", "https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/js/openmap/icon_kakao_map.png");
 		$(".setMapheader a:nth-child(1) img").attr("alt", "카카오톡");
 
 	} else if (useMap == KAKAO) {
 		flgCurrentMap = KAKAO;
 		startKakaoMap();
 		$(".setMapheader a:nth-child(1)").attr("href", "javascript:showMap('N');");
-		$(".setMapheader a:nth-child(1) img").attr("src", "/idsiSFK/neo/ext/img/common/icon_naver_map.png");
+		$(".setMapheader a:nth-child(1) img").attr("src", "https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/js/openmap/icon_naver_map.png");
 		$(".setMapheader a:nth-child(1) img").attr("alt", "네이버");
 	}
 }
