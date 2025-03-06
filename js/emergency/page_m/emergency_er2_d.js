@@ -1,10 +1,10 @@
 //목록보기 버튼
 function fn_retrieve() {
-	if (document.referrer.includes('/emergency_er2.html')) {
+	if (document.referrer.includes('/emergency_er2.do')) {
 		history.back();
 	}
 	else{
-		location.href = "/idsiSFK/neo/emp_m/er/emergency_er2.html";
+		location.href = "/idsiSFK/neo/emp_m/er/emergency_er2.do";
 	}
 }
 

@@ -128,7 +128,7 @@ var mapIcon = true;
 							//gen.getChild( i , "a1" ).setValue( json.BBS_ORDR );
 							gen.getChild( i , "a2" ).setValue( json.SJ );						       
 							//gen.getChild( i , "a2" ).setHref('/idsiSFK/neo/emp/er/emergency_er1_d.html?bbsOrdr=' + json.BBS_ORDR);
-							gen.getChild( i , "a2" ).setHref( '/idsiSFK/neo/emp_m/er/emergency_er2_d.html?bbsOrdr=' + json.BBS_ORDR  );
+							gen.getChild( i , "a2" ).setHref( '/idsiSFK/neo/emp_m/er/emergency_er2_d.do?bbsOrdr=' + json.BBS_ORDR  );
 							//gen.getChild( i , "a3" ).setValue( json.USR_NM );
 							gen.getChild( i , "a3" ).setValue( json.FRST_REGIST_DT );
 						}
