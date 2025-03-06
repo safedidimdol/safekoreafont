@@ -524,7 +524,7 @@ $(function(){
 			addr = addr.split(',')[0];
 
 	 		// 주소검색
-			var url = "/idsiSFK/neo/mapViewPopup_neo.html?addr="+encodeURI(encodeURIComponent(addr))+"&facilNm="+encodeURI(encodeURIComponent(facilNm));
+			var url = "/idsiSFK/neo/mapViewPopup_neo_cdn.do?addr="+encodeURI(encodeURIComponent(addr))+"&facilNm="+encodeURI(encodeURIComponent(facilNm));
 		    window.open( url, "spamMain", "height=660px; width=660px; left=0; top=0; toolbar=no, menubar=no, location=no, status=yes, realzable=no, fullscreen=no, scrollbars=no, resizable=yes");
 		}
 
@@ -559,7 +559,7 @@ $(function(){
 			var la = json.LAT;
 			var url = "";
 			if( (lo != "" && lo != undefined) && (la != "" && la != undefined) ){
-			  	url = "/idsiSFK/neo/mapViewPopup_neo.html?lo="+json.LON+"&la="+json.LAT+"&facilNm="+encodeURI(encodeURIComponent(facilNm));
+			  	url = "/idsiSFK/neo/mapViewPopup_neo_cdn.do?lo="+json.LON+"&la="+json.LAT+"&facilNm="+encodeURI(encodeURIComponent(facilNm));
 			} else {
 				url = "/idsiSFK/neo/mapViewPopup_neo.html?addr="+encodeURI(encodeURIComponent(addr))+"&facilNm="+encodeURI(encodeURIComponent(facilNm));
 			}

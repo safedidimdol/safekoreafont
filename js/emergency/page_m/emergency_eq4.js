@@ -712,7 +712,7 @@ $(function(){
 	 		// 주소검색
 			var lo = json.LO;
 			var la = json.LA;
-			url = "/idsiSFK/neo/mapViewPopup_neo.html?lo="+json.LO+"&la="+json.LA+"&facilNm="+encodeURI(encodeURIComponent(facilNm))+"&addr="+encodeURI(encodeURIComponent(addr));
+			url = "/idsiSFK/neo/mapViewPopup_neo_cdn.do?lo="+json.LO+"&la="+json.LA+"&facilNm="+encodeURI(encodeURIComponent(facilNm))+"&addr="+encodeURI(encodeURIComponent(addr));
 		    window.open( url, "spamMain", "height=660px; width=660px; left=0; top=0; toolbar=no, menubar=no, location=no, status=yes, realzable=no, fullscreen=no, scrollbars=no, resizable=yes");
 		}
 
@@ -748,7 +748,7 @@ $(function(){
 			//	addr = addr.replace('경상북도 군위군', '대구광역시 군위군');
 			//	url = "https://www.safekorea.go.kr/idsiSFK/neo/mapViewPopup.html?addr="+encodeURI(encodeURIComponent(addr))+"&facilNm="+encodeURI(encodeURIComponent(facilNm));
 			//} else{
-			  	url = "/idsiSFK/neo/mapViewPopup_neo.html?lo="+json.LO+"&la="+json.LA+"&facilNm="+encodeURI(encodeURIComponent(facilNm))+"&addr="+encodeURI(encodeURIComponent(addr));;
+			  	url = "/idsiSFK/neo/mapViewPopup_neo_cdn.do?lo="+json.LO+"&la="+json.LA+"&facilNm="+encodeURI(encodeURIComponent(facilNm))+"&addr="+encodeURI(encodeURIComponent(addr));;
 			//}
 		    window.open( url, "spamMain", "height=660px; width=660px; left=0; top=0; toolbar=no, menubar=no, location=no, status=yes, realzable=no, fullscreen=no, scrollbars=no, resizable=yes");
 	}
