@@ -226,7 +226,7 @@ function showKaKaoInfoWindow(lat, lon) {
 
 	var locPosition = new kakao.maps.LatLng(lat, lon); // 인포윈도우에 표시될 내용입니다
 
-	var imageSrc = "http://static.naver.net/maps/mantle/1x/marker-default.png"; // 마커이미지의 주소입니다
+	var imageSrc = "https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/marker-default.png"; // 마커이미지의 주소입니다
 //	var imageSrc = getMarkerImageSrc(); // 마커이미지의 주소입니다
 	// 마커를 생성합니다
 	kMarker = createImageMarkerK(locPosition, imageSrc);

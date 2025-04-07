@@ -272,7 +272,7 @@ function showNaverInfoWindow(latitude, longitude) {
 		naverMap.setZoom(17);
 		naverMap.panTo(locPosition);
 
-		var imageSrc = "http://static.naver.net/maps/mantle/1x/marker-default.png"; // 마커이미지의 주소입니다
+		var imageSrc = "https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/marker-default.png"; // 마커이미지의 주소입니다
 /*		var imageSrc = getMarkerImageSrc(); // 마커이미지의 주소입니다
 */
 		var marker = createImageMarkerN(locPosition, imageSrc);
