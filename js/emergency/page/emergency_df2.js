@@ -251,17 +251,29 @@ var $li = $('#gen').find('li').clone();
 				innerHTML =  parseInt(jdata[10*(pageIndex-1)+i].FACIL_POW/1.43) + "명";
 				$cell5.html(innerHTML);
 			}
-			//상세코드
-			var FACIL_DTL_CODE = jdata[10*(pageIndex-1)+i].FACIL_DTL_CODE;
+		   //상세코드
+		   var FACIL_DTL_CODE = jdata[10*(pageIndex-1)+i].FACIL_DTL_CODE;
+		   var FACIL_DTL_NM = jdata[10*(pageIndex-1)+i].FACIL_DTL_NM;
+		 
+		   //const keywords = ['시설유도블록', '완만한 경사로', '점자마킹','휠체어리프트','출입구 경사로','접이식이동경사로'];
+			const keywords = ['C10', 'C11', 'C13','C12','C14','A14'];
+	       var codeArr = FACIL_DTL_CODE.split(',');
+		    const resultArray = _.chain(FACIL_DTL_NM)
+		    .split('@')
+		    .filter((item, index) => {
+				console.log(index);
+				console.log(_.last(item));
+		        return _.last(item) !== '0' // 마지막 글자가 '0'이 아닌 조건 추가
+		    })
+		    .value();
+						
+		    jdata[10*(pageIndex-1)+i].FACIL_DTL_NM = resultArray.toString();
+			FACIL_DTL_NM =  resultArray.toString();
 						
 			var bathchair = "";
-			if(FACIL_DTL_CODE != null){
-				var chairArr = FACIL_DTL_CODE.split(',');
-				if(chairArr[0] != ""){
-					if(chairArr.length > 0){
-						bathchair = "<a class='' href='javascript:fn_openPop("+i+")'>" + "<img src='/idsiSFK/neo/ext/img/bathchair.png'></img>" + "</a>";	
-					}	
-				}
+			if(FACIL_DTL_NM != ''){
+				bathchair = "<a class='' href='javascript:fn_openPop("+i+")'>" + "<img src='https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/bathchair.png'></img>" + "</a>";	
+					
 			}
 			
 			//cell5.innerHTML = "<span style='word-break:break-all'>" + chairArr.toString() + "</span>";
