@@ -267,24 +267,35 @@ var $li = $('#gen').find('li').clone();
 			//시설구분
 			$celln4.html(jdata[10*(pageIndex-1)+i].FACIL_GBN_NM);
 			
-			//상세코드
-			var FACIL_DTL_CODE = jdata[10*(pageIndex-1)+i].FACIL_DTL_CODE;
-						
-			var bathchair = "";
 			
-			if(!_.isEmpty(FACIL_DTL_CODE)){
-				var chairArr = FACIL_DTL_CODE.split(',');
-				if(chairArr[0] != ""){
-					if(chairArr.length > 0){
-						bathchair = "<a class='' href='javascript:fn_openPop("+i+")'>" + "<img src='/idsiSFK/neo/ext/img/bathchair.png'></img>" + "</a>";	
-					}	
-				}
-				$celln5.parents('.col5').css('display','');  
+		 //상세코드
+           var FACIL_DTL_CODE = jdata[10*(pageIndex-1)+i].FACIL_DTL_CODE;
+           var FACIL_DTL_NM = jdata[10*(pageIndex-1)+i].FACIL_DTL_NM;
+         
+           //const keywords = ['시설유도블록', '완만한 경사로', '점자마킹','휠체어리프트','출입구 경사로','접이식이동경사로'];
+            const keywords = ['C10', 'C11', 'C13','C12','C14','A14'];
+           var codeArr = FACIL_DTL_CODE.split(',');
+            const resultArray = _.chain(FACIL_DTL_NM)
+            .split('@')
+            .filter((item, index) => {
+                console.log(_.last(item));
+                return _.last(item) !== '0' // 마지막 글자가 '0'이 아닌 조건 추가
+            })
+            .value();
+                        
+            jdata[10*(pageIndex-1)+i].FACIL_DTL_NM = resultArray.toString();
+            FACIL_DTL_NM =  resultArray.toString();
+                        
+            var bathchair = "";
+            if(FACIL_DTL_NM != ''){
+                bathchair = "<a class='' href='javascript:fn_openPop("+i+")'>" + "<img src='https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/bathchair.png'></img>" + "</a>";   
+                $celln5.parents('.col5').css('display','');  
 				$celln5.html('이용가능시설');  
-			}
+            }
 			else{
 				$celln5.parents('.col5').css('display','none');
 			}
+						
 			
 			//cell5.innerHTML = "<span style='word-break:break-all'>" + chairArr.toString() + "</span>";
 			innerHTML = "<span style='word-break:break-all'>" + bathchair + "</span>";
