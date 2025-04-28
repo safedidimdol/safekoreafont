@@ -255,10 +255,10 @@ var $li = $('#gen').find('li').clone();
 			
 			//수용인원
 			if(jdata[10*(pageIndex-1)+i].FACIL_GBN_NM == "공공시설") {
-				innerHTML = parseInt(jdata[10*(pageIndex-1)+i].FACIL_POW/0.825) + "명";
+				innerHTML = parseInt(jdata[10*(pageIndex-1)+i].FACIL_POW/1.0) + "명";
 				$celln3.html(innerHTML);
 			} else if (jdata[10*(pageIndex-1)+i].FACIL_GBN_NM == "정부지원") {
-				innerHTML =  parseInt(jdata[10*(pageIndex-1)+i].FACIL_POW/1.43) + "명";
+				innerHTML =  parseInt(jdata[10*(pageIndex-1)+i].FACIL_POW/1.77) + "명";
 				$celln3.html(innerHTML);
 			}
 			
@@ -273,7 +273,7 @@ var $li = $('#gen').find('li').clone();
            var FACIL_DTL_NM = jdata[10*(pageIndex-1)+i].FACIL_DTL_NM;
          
            //const keywords = ['시설유도블록', '완만한 경사로', '점자마킹','휠체어리프트','출입구 경사로','접이식이동경사로'];
-            const keywords = ['C10', 'C11', 'C13','C12','C14','A14'];
+            const keywords = ['C10', 'C11', 'C13','C12','C14','A14','A10','A11','A12','A13'];
            var codeArr = FACIL_DTL_CODE.split(',');
             const resultArray = _.chain(FACIL_DTL_NM)
             .split('@')
@@ -288,7 +288,7 @@ var $li = $('#gen').find('li').clone();
                         
             var bathchair = "";
             if(FACIL_DTL_NM != ''){
-                bathchair = "<a class='' href='javascript:fn_openPop("+i+")'>" + "<img src='https://cdn.jsdelivr.net/gh/safedidimdol/safekoreafont/bathchair.png'></img>" + "</a>";   
+                bathchair = "<a class='' href='javascript:fn_openPop("+i+")'>" + "<img src='/idsiSFK/neo/ext/img/bathchair.png'></img>" + "</a>";   
                 $celln5.parents('.col5').css('display','');  
 				$celln5.html('이용가능시설');  
             }
